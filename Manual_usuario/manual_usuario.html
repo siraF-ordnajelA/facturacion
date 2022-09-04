@@ -1,0 +1,477 @@
+<html>
+   <head>
+      <title>Manual del Usuario</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+      <link href="imagenes/icono.png" type="imagenes/x-icon" rel="shortcut icon" />
+      <link rel="stylesheet" href="style.css">
+   </head>
+   
+   <body>
+      <div class="contenedor">
+         <center><div class="titulo"><h1>Sistema de Facturaci&oacute;n</h1><h2>(Manual del usuario)</h2></div></center>
+         <br><br>
+         Este sistema permitir&aacute; el ingreso de facturas emitidas, recibidas, cheques y notas de cr&eacute;dito
+         o d&eacute;bito, que posibilitar&aacute;n los diferentes movimientos de caja o caja chica.<br>
+         El manejo es sobre los diferentes menues en la parte superior de la p&aacute;gina, una vez ingresado al sistema.
+         <br><br>
+         <center><img src="imagenes/menu.jpg" /></center>
+         <br><br>
+         <a name="Indice"></a>
+         A continuaci&oacute;n veremos un mapa del sitio. Pinche sobre la opci&oacute;n deseada para obtener
+         m&aacute;s informaci&oacute;n:
+         <br><br>
+         <div class="contenedor_indice">
+            <ul>
+               <li><a href="#Inicio">Inicio</a></li>
+               <li><a href="#abm"><b>AMB</b></a></li>
+               <ul>
+                  <li><a href="#administradores">Administradores</a></li>
+                  <li><a href="#clientes">Clientes</a></li>
+                  <li><a href="#empleados">Empleados / Usuarios</a></li>
+                  <li><a href="#bancos">Bancos</a></li>
+                  <li><a href="#usuarios">Usuarios</a></li>
+               </ul>
+               <li><a href="#comprobantes"><b>Comprobantes</b></a></li>
+               <ul>
+                  <li><a href="#facturas_emitidas">Facturas emitidas</a></li>
+                  <li><a href="#facturas_recibidas">Facturas recibidas</a></li>
+                  <li><a href="#cheques">Cheques</a></li>
+                  <li><a href="#notas">Notas de d&eacute;bito/cr&eacute;dito</a></li>
+               </ul>
+               <li><a href="#consultas"><b>Consultas</b></a></li>
+               <ul>
+                  <li><a href="#busqueda_comprobantes">B&uacute;squeda de comprobantes</a></li>
+                  <li><a href="#facturacion_por_clientes">Facturaci&oacute;n por clientes</a></li>
+                  <li><a href="#estado_caja">Estado caja</a></li>
+               </ul>
+               <li><a href="#caja_chica">Caja chica</a></li>
+               <li><a href="#salir">Salir</a></li>
+            </ul>
+         </div>
+         <br><br>
+         <a name="Inicio"></a>
+         <h3><u>INICIO</u>:</h3><a href="#Indice">[Volver al inicio]</a>
+         <center><img src="imagenes/menu_inicio.jpg" /></center>
+         <br><br>
+         En el inicio manejaremos los movimientos de caja, cabe destacar que para poder realizar cualquier tipo de movimiento,
+         primero deberemos de tener creado el comprobante desde el menu de "Comprobantes". Cada movimiento realizado,
+         solamente podr&aacute; ser modificado antes de finalizar el d&iacute;a.<br>
+         Para poder ingresar un movimiento, completaremos el formulario que vemos al ingresar al sistema:
+         <br><br>
+         <center><img src="imagenes/movimiento_caja_senalado.jpg" /></center>
+         <br><br>
+         <b>1)</b>&nbsp;Seleccionaremos el tipo de movimiento entre las 4 siguientes opciones:
+         <ul>
+            <li>Factura emitida</li>
+            <li>Factura recibida</li>
+            <li>Cheque</li>
+            <li>Nota de d&eacute;bito/cr&eacute;dito</li>
+         </ul>
+         De dichas opciones, se habilitar&aacute; el siguiente desplegable:
+         <br><br>
+         <b>2)</b>&nbsp;N&uacute;mero de comprobante:<br>
+         Dicha opci&oacute;n desplegar&aacute; unicamente los comprobantes que pertenecen a la categor&iacute;a seleccionada
+         anteriormente. Se visualizar&aacute;n los comprobantes que no a&uacute;n no tienen movimientos o las facturas emitidas
+         cuyas no hayan sido saldadas completamente.
+         <br><br>
+         <b>3)</b>&nbsp;Ingresamos el importe cobrado (dos decimales separados por coma) si se trata de una factura emitida,
+         cheque recibido o nota.
+         <br><br>
+         <b>4)</b>&nbsp;Ingresamos el importe pagado (dos decimales separados por coma) si se trata de una factura recibida,
+         cheque recibido o nota.
+         <br><br>
+         <b>5)</b>&nbsp;Ingresaremos las cargas, o deducciones calculadas a parte de la fatura.
+         <br><br>
+         <b>6)</b>&nbsp;Seleccionaremos el medio de pago si se trata de:
+         <ul>
+            <li>Transferencia</li>
+            <li>Cheque</li>
+            <li>Efectivo</li>
+         </ul>
+         <b>7)</b>&nbsp;Indicaremos si el importe ingresado corresponde al total del comprobante o solamente a una parte. (Pago
+         total o parcial).
+         <br><br>
+         <b>8)</b>&nbsp;En el campo de Observaciones, a&ntilde;adiremos alguna observaci&oacute;n que sea complementaria al
+         movimiento que estamos realizando.
+         <br><br><br>
+         Una vez ingresados todos los datos, el movimiento quedar&aacute; guardado en sistema junto al nombre del usuario, fecha y
+         hora.<br>
+         Al pie de la p&aacute;gina podremos ver todos los movimientos realizados en el mes, para poder visualizar movimientos
+         anteriores, simplemente deberemos seleccionar el mes y a&ntilde;o desde el combo desplegable:
+         <br><br>
+         <center><img src="imagenes/movimiento_caja_mes.jpg" /></center>
+         <br><br>
+         Las columnas nos detallar&aacute;n lo siguiente:
+         <ul>
+            <li>Fecha ingreso: Fecha y hora en la que el usuario registr&oacute; el movimiento</li>
+            <li>Usuario: Apellido y nombre del usuario que registr&oacute; el movimiento</li>
+            <li>Cliente: Cliente relacionado con la factura</li>
+            <li>Monto Facturado: Monto final indicado en la factura</li>
+            <li>Cobrado: Monto cobrado ingresado en el formulario</li>
+            <li>Pagado: Monto pagado ingresado en el formulario</li>
+            <li>Saldo: Saldo total del cliente</li>
+            <ul>
+               <li>Fondo rojo indica que el cliente tiene una deuda</li>
+               <li>Fondo verde indica que el cliente tiene saldo a favor</li>
+            </ul>
+            <li>Medio: medio por el cual se realiz&oacute; el cobro o el pago</li>
+            <li>Seg. social, Iva, Ganancias: Son valores de cargas ingresados en formularo</li>
+            <li>Total cargas: corresponde a la sumatoria de las 3 cargas ingresadas</li>
+            <li>Observaciones: Son las observaciones ingresadas en el formulario</li>
+            <li>Aprobado: Indica si el movimiento fue aprovado o no por un administrador</li>
+         </ul>
+         <br><br><br>
+         <a name="abm"></a>
+         <h3><u>ABM</u>:</h3>
+         <br>
+         <a name="administradores"></a>
+         <h4>Administradores</h4>
+         <a href="#Indice">[Volver al inicio]</a>
+         <center><img src="imagenes/ABM-Administradores_1.jpg" /></center>
+         <br><br>
+         Desde aqu&iacute; daremos de alta, baja o modificaremos un Administrador. Al ingresar en dicha opci&oacute;n, veremos
+         un listado de todos los administradores del sistema, desde donde podremos modificar o eliminar los datos.
+         <br><br>
+         <center><img src="imagenes/ABM-Administradores_2.jpg" /></center>
+         <br><br>
+         Desde el bot&oacute;n <b>"Agregar Administrador"</b>, ingresaremos un nuevo registro. Los campos requeridos para el ingreso
+         de un Administrador son los siguientes:
+         <ul>
+            <li>Raz&oacute;n</li>
+            <li>Nombre</li>
+            <li>Domicilio</li>
+            <li>C&oacute;digo postal</li>
+            <li>Localidad</li>
+            <li>Provincia</li>
+            <li>CUIT</li>
+            <li>Porcentaje (porcentaje que se lleva de la facturaci&oacute;n</li>
+            <li>Datos de contacto (hasta 10 contactos)</li>
+            <ul>
+               <li>Nombre</li>
+               <li>N&uacute;mero</li>
+               <li>eMail</li>
+            </ul>
+            <li>Observaciones</li>
+         </ul>
+         Cada Administrador tambi&eacute;n tiene nexo de otros clientes (edificios), por lo que cada administraci&oacute;n
+         puede estar relacionada con otros edificios o clientes. Para poder ver, agregar o eliminar dicha relaci&oacute;n, lo
+         podremos hacer desde el bot&oacute;n <b>"Agregar relaci&oacute;n"</b>.
+         <br><br>
+         <a name="clientes"></a>
+         <h4>Clientes</h4>
+         <a href="#Indice">[Volver al inicio]</a>
+         <center><img src="imagenes/ABM-Clientes_1.jpg" /></center>
+         <br><br>
+         Desde aqu&iacute; daremos de alta, baja o modificaremos un Cliente. Al ingresar en dicha opci&oacute;n, veremos
+         un listado de todos los clientes del sistema, desde donde podremos modificar o eliminar los datos.
+         <br><br>
+         <center><img src="imagenes/ABM-Clientes_2.jpg" /></center>
+         <br><br>
+         Desde el bot&oacute;n <b>"Agregar Cliente"</b>, ingresaremos un nuevo registro. Los campos requeridos para el ingreso
+         de un cliente son los siguientes:
+         <ul>
+            <li>Raz&oacute;n</li>
+            <li>Nombre</li>
+            <li>Domicilio</li>
+            <li>C&oacute;digo postal</li>
+            <li>Localidad</li>
+            <li>Provincia</li>
+            <li>CUIT</li>
+            <li>Abono (abono que le corresponde al cliente)</li>
+            <li>Empleados (son la cantidad de empleados que son asignados al cliente</li>
+            <li>Datos de contacto (hasta 10 contactos)</li>
+            <ul>
+               <li>Nombre</li>
+               <li>N&uacute;mero</li>
+               <li>eMail</li>
+            </ul>
+            <li>Observaciones</li>
+         </ul>
+         <br><br>
+         <a name="empleados"></a>
+         <h4>Empleados / Usuarios</h4>
+         <a href="#Indice">[Volver al inicio]</a>
+         <center><img src="imagenes/ABM-Empleados_1.jpg" /></center>
+         <br><br>
+         Desde aqu&iacute; daremos de alta, baja o modificaremos un empleado. Al ingresar en dicha opci&oacute;n, veremos
+         un listado de todos los empleados ingresados al sistema, desde donde podremos modificar o eliminar los datos.<br><br>
+         <b><u>Nota</u></b>: <i>para poder dar de alta un usuario al sistema, es necesario tener creado primero al empleado.</i>
+         <br><br>
+         <center><img src="imagenes/ABM-empleados_2.jpg" /></center>
+         <br><br>
+         Desde el bot&oacute;n <b>"Agregar empleado"</b>, ingresaremos un nuevo registro. Los campos requeridos para el ingreso
+         de un empleado son los siguientes:
+         <ul>
+            <li>Apellido</li>
+            <li>Nombre</li>
+            <li>DNI</li>
+            <li>CUIL</li>
+            <li>Domicilio</li>
+            <li>Piso/Departamento</li>
+            <li>Localidad</li>
+            <li>Provincia</li>
+            <li>Sueldo bruto</li>
+            <li>Carga 1</li>
+            <li>Carga 2</li>
+            <li>Cerga 3</li>
+            <li>Jornada laboral</li>
+            <ul>
+               <li>Media</li>
+               <li>Completa</li>
+            </ul>
+            <li>eMail</li>
+            <li>Tel&eacute;fono de l&iacute;nea</li>
+            <li>Celular</li>
+            <li>Observaciones</li>
+            <li>Permisos</li>
+            <ul>
+               <li>Administrador</li>
+               <li>Usuario</li>
+            </ul>
+         </ul>
+         Dentro de la opci&oacute;n "Permisos", estos corresponden al perfil que tendr&aacute; el usuario dentro del sistema.
+         Los permisos indican las secciones a las que podr&aacute; tener acceso el usuario que se vaya a crear.<br>
+         Para podrer crear un usuario de sistema, luego de haber ingresado todos estos datos, deber&aacute; crear un nombre de
+         usuario y contrase&ntilde;a desde el menu <a href="#usuarios">Usuarios</a>
+         <br><br>
+         <a name="bancos"></a>
+         <h4>Bancos</h4>
+         <a href="#Indice">[Volver al inicio]</a>
+         <center><img src="imagenes/ABM-Bancos_1.jpg" /></center>
+         <br><br>
+         Esta opci&oacute;n est&aacute; orientada a agregar, modificar o eliminar el listado de bancos que podremos seleccionar
+         al manipular un cheque.
+         <br><br>
+         <a name="usuarios"></a>
+         <h4>Usuarios</h4>
+         <a href="#Indice">[Volver al inicio]</a>
+         <center><img src="imagenes/ABM-Usuarios_1.jpg" /></center>
+         <br><br>
+         Desde aqu&iacute; crearemos, eliminaremos o modificaremos un usuario de sistema. Tener en cuenta que para poder
+         visualizar esta opci&oacute;n, primero deberemos <a href="#empleados">crear al empleado</a> dentro del sistema para luego
+         poder asignarle un nombre y contrase&ntilde;a de sistema. Un nombre de usuario difiere al nombre verdadero del
+         empleado. En la siguiente imagen visualizamos los campos a completar:
+         <br><br>
+         <center><img src="imagenes/ABM-Usuarios_2.jpg" /></center>
+         <br><br>
+         <b>1)</b>&nbsp;Dentro de esta secci&oacute;n UNICAMENTE asignaremos o modificaremos el nombre de usuario. Si el campo
+         est&aacute; vac&iacute;o, quiere decir que dicho Empleado no posee usuario para ingresar al sistema. Si en cambio deseamos
+         eliminar el usuario, pincharemos sobre el bot&oacute;n "Eliminar".<br>
+         Para modificar el usuario, pinchamos sobre el nombre de usuario, escribimos y luego pinchamos el bot&oacute;n "Modificar".
+         <br><br>
+         <b>2)</b>&nbsp;Si creamos por primera vez el usuario, desde aqu&iacute; le asignaremos una contrase&ntilde;, la cual luego
+         podr&aacute; ser modificada por el usuario. En cambio si deseamos resetear una contrase&ntilde;a, directamente ingresamos
+         la nueva contrase&ntilde; y pinchamos el bot&oacute;n "Actualizar contrase&ntilde;a".
+         <br><br>
+         Las contrase&ntilde;as tienen un cifrado por sistema, por lo cual ni siquiera el administrador puede saber o recuperar
+         una contrase&ntilde;a ya ingresada. Esto es as&iacute; para poder asegurar la informaci&oacute;n del sistema.
+         <br><br><br>
+         <a name="comprobantes"></a>
+         <h3><u>COMPROBANTES</u>:</h3>
+         <br>
+         <a name="facturas_emitidas"></a>
+         <h4>Facturas Emitidas</h4>
+         <a href="#Indice">[Volver al inicio]</a>
+         <center><img src="imagenes/COMPROBANTES-Facturas_emitidas_1.jpg" /></center>
+         <br><br>
+         Desde aqu&iacute; se podr&aacute;n ingresar los comprobantes emitidos para cada cliente. Desde el formulario de ingreso
+         se deber&aacute;n cargar todos los datos de la factura, para luego poder realizar un movimiento de caja relacionado
+         a dicho comprobante mediante el n&uacute;mero de factura (si no se crea un comprobante, no se puede realizar un
+         movimiento de caja).
+         <br><br>
+         <center><img src="imagenes/COMPROBANTES-Facturas_emitidas_2.jpg" /></center>
+         <br><br>
+         <ul>
+            <li>Cliente: desde el combo desplegable seleccionaremos a que cliente corresponder&aacute la factura (primeramente el cliente deber&aacute; estar ingresado en sistema desde <a href="#clientes">ABM-Clientes</a></li>
+            <li>Fecha: Fecha de emisi&oacute;n de la factura</li>
+            <li>N&uacute;mero de comprobante: N&uacute;mero de la factura</li>
+            <li>Tipo: Tipo de factura</li>
+            <ul>
+               <li>A</li>
+               <li>B</li>
+               <li>C</li>
+            </ul>
+            <li>IVA: Selecciona el porcentaje de IVA seg&uacute;n el tipo de factura seleccionada</li>
+            <li>Importe a facturar: Importe total de la factura</li>
+            <li>Observaciones que caben destacar a la factura</li>
+         </ul>
+         Una vez cargadas las facturas, podremos visualizarlas desde la siguiente tabla o modificarlas, borrarlas dentro del
+         plazo del d&iacute;a.
+         <br><br>
+         <center><img src="imagenes/COMPROBANTES-Facturas_emitidas_3.jpg" /></center>
+         <br><br>
+         Tambi&eacute;n desde aqu&iacute; visualizaremos el estado de la factura desde las columnas "Medio" y "Cobro". En caso
+         de no existir movimientos, observaremos que el campo indicar&aacute; <b>"Sin movimientos"</b>.
+         <br><br>
+         <a name="facturas_recibidas"></a>
+         <h4>Facturas Recibidas</h4>
+         <a href="#Indice">[Volver al inicio]</a>
+         <center><img src="imagenes/COMPROBANTES-Facturas_recibidas_1.jpg" /></center>
+         <br><br>
+         Desde aqu&iacute; se podr&aacute;n ingresar los comprobantes recibidos de cada proveedor (cliente). Desde el formulario
+         de ingreso se deber&aacute;n cargar todos los datos de la factura, para luego poder realizar un movimiento de caja
+         relacionado a dicho comprobante mediante el n&uacute;mero de factura (si no se crea un comprobante, no se puede
+         realizar un movimiento de caja).
+         <br><br>
+         <center><img src="imagenes/COMPROBANTES-Facturas_recibidas_2.jpg" /></center>
+         <br><br>
+         <ul>
+            <li>Cliente: desde el combo desplegable seleccionaremos a que cliente corresponder&aacute la factura (primeramente el cliente deber&aacute; estar ingresado en sistema desde <a href="#clientes">ABM-Clientes</a></li>
+            <li>Fecha: Fecha de emisi&oacute;n de la factura recibida</li>
+            <li>N&uacute;mero de comprobante: N&uacute;mero de la factura</li>
+            <li>Tipo: Tipo de factura</li>
+            <ul>
+               <li>A</li>
+               <li>B</li>
+               <li>C</li>
+            </ul>
+            <li>IVA: Selecciona el porcentaje de IVA seg&uacute;n el tipo de factura seleccionada</li>
+            <li>Importe: Importe total de la factura</li>
+            <li>Opci&oacute;n de pago: seleccionamos el medio por el cual se pag&oacute; la factura</li>
+            <li>Observaciones que caben destacar a la factura</li>
+         </ul>
+         Una vez cargadas las facturas, podremos visualizarlas desde la siguiente tabla o modificarlas, borrarlas dentro del
+         plazo del d&iacute;a.
+         <br><br>
+         <center><img src="imagenes/COMPROBANTES-Facturas_recibidas_3.jpg" /></center>
+         <br><br>
+         <a name="cheques"></a>
+         <h4>Cheques</h4>
+         <a href="#Indice">[Volver al inicio]</a>
+         <center><img src="imagenes/COMPROBANTES-Cheques_1.jpg" /></center>
+         <br><br>
+         Dentro de esta opci&oacute;n, ingresaremos tanto cheques emitidos como recibidos mediante el bot&oacute;n "Agregar Cheque"
+         <br><br>
+         <center><img src="imagenes/COMPROBANTES-Cheques_2.jpg" /></center>
+         <br><br>
+         Una vez ingresamos, el formulario nos permitir&aacute; completar los siguientes campos:
+         <ul>
+            <li>Fecha de emisi&oacute;n/pago: Ingresaremos la fecha en la que se emiti&oacute; el cheque</li>
+            <li>Banco: Seleccionamos el banco del cual corresponde el cheque o al cual se depositar&aacute; seg&uacute;n sea
+            un cheque emitido o recibido. (El desplegable de bancos es modificable por medio del <a href="#bancos">ABM-Bancos</a>).</li>
+            <li>N&uacute;mero de cheque</li>
+            <li>Importe: importe del cheque</li>
+            <li>Destinatario: Nombre del destinatario del cheque</li>
+            <li>Observaciones: observaciones adicionales</li>
+            <li>Emitido/recibido: seleccionamos el tipo de cheque del que se trata</li>
+         </ul>
+         Una vez ingresado el cheque, visualizaremos los mismos desde el listado principal. Aqu&iacute; podremos modificar
+         los datos ingresados en el plazo del d&iacute;a.
+         <br><br>
+         <center><img src="imagenes/COMPROBANTES-Cheques_3.jpg" /></center>
+         <br><br>
+         <a name="notas"></a>
+         <h4>Notas de d&eacute;bito o cr&eacute;dito</h4>
+         <a href="#Indice">[Volver al inicio]</a>
+         <center><img src="imagenes/COMPROBANTES-notas_1.jpg" /></center>
+         <br><br>
+         Desde esta opci&oacute;n ingresaremos las notas de d&eacute;bito o cr&eacute;dito pinchando sobre el bot&oacute;n
+         "<b>Agregar nota</b>". Una vez ingresamos, visualizaremos el siguiente formulario de carga
+         <br><br>
+         <center><img src="imagenes/COMPROBANTES-Notas_2.jpg" /></center>
+         <br><br>
+         <ul>
+            <li>Detalle: Corta descripci&oacute;n de la nota</li>
+            <li>Importe: importe de la nota</li>
+            <li>Tipo de nota: mediante el combo seleccionaremos si se tratar&aacute; de una nota de cr&eacute;dito o d&eacute;bito</li>
+         </ul>
+         <br><br><br>
+         <a name="consultas"></a>
+         <h3><u>CONSULTAS</u>:</h3>
+         <br>
+         Desde esta secci&oacute;n realizaremos consultas relacionadas a la facturaci&oacute;n, clientes y movimientos de caja
+         organizados por fecha o cliente. B&aacute;sicamente esta secci&oacute;n est&aacute; orientada a sintetizar toda la
+         informaci&oacute;n recolectada sobre las finanzas.
+         <br>
+         <a name="busqueda_comprobantes"></a>
+         <h4>B&uacute;squeda de comprobantes</h4>
+         <a href="#Indice">[Volver al inicio]</a>
+         <center><img src="imagenes/CONSULTAS-Busqueda_de_comprobantes_1.jpg" /></center>
+         <br><br>
+         Desde esta secci&oacute;n podremos realizar una b&uacute;squeda y visualizaci&oacute;n de cualquiera de los 4 tipos de
+         comprobantes posibles del sistema. Dicha b&uacute;squeda se podr&aacute; realizar ya sea mediante un rango de fechas
+         o un n&uacute;mero de comprobante en caso de conocerlo.
+         <br><br>
+         <center><img src="imagenes/CONSULTAS-Busqueda_de_comprobantes_2.jpg" /></center>
+         <br><br>
+         El resultado brindar&aacute; una informaci&oacute;n detallada sobre el comprobante y el cliente relacionado.
+         <br><br>
+         <a name="facturacion_por_clientes"></a>
+         <h4>Facturaci&oacute;n por clientes</h4>
+         <a href="#Indice">[Volver al inicio]</a>
+         <center><img src="imagenes/CONSULTAS-facturacion_clientes_1.jpg" /></center>
+         <br><br>
+         Desde aqu&iacute; visualizaremos el estado financiero de cada cliente, ya sea todos los clientes entre un rango de
+         fechas o por cliente.
+         <br><br>
+         <center><img src="imagenes/CONSULTAS-facturacion_clientes_2.jpg" /></center>
+         <br><br>
+         Al seleccionar el cliente desde el combo desplegable, autom&aacute;ticamente se mostrar&aacute; el estado financiero
+         del mismo en una tabla que se cargar&aacute; a continuaci&oacute;n:
+         <br><br>
+         <center><img src="imagenes/CONSULTAS-facturacion_clientes_3.jpg" /></center>
+         <br><br>
+         Visualizaremos todos los comprobantes a nombre de dicho cliente ordenados de fecha m&aacute;s nueva a la m&aacute;s
+         antigua hacia abajo. Los datos son los siguientes:
+         <ul>
+            <li>Raz&oacute;on: Raz&oacute;n del cliente seleccionado</li>
+            <li>N&uacute;mero de comprobante: N&uacute;mero de la factura o comprobante</li>
+            <li>Fecha factura: Fecha en la que se emiti&oacute; la factura</li>
+            <li>Fecha de pago: Fecha en la que se realiz&oacute; el movimiento de caja</li>
+            <li>Importe, IVA, monto facturado: Estos datos son los que fueron cargados en la factura</li>
+            <li>Cobrado: es el importe cobrado que se ingres&oacute; en el movimiento de caja</li>
+            <li>Saldo factura: Corresponde al saldo de dicha factura</li>
+            <li>Saldo cliente: Corresponde al saldo acumulado del cliente al momento de la fecha de pago</li>
+         </ul>
+         <u>Saldo cliente</u>: Tanto al comienzo como al final de la tabla, se mostrar&aacute; el saldo total acumulado del
+         cliente seleccionado. Cabe destacar que los saldos marcados en Rojo, son deudas que tiene el cliente para con
+         nosotros, mientras que los saldos marcados en verde, tienen un valor negativo y son saldos a favor del cliente. Los
+         saldos en cero no tendr&aacute;n ning&uacute;n color resaltado.
+         <br><br>
+         <a name="estado_caja"></a>
+         <h4>Estado caja</h4>
+         <a href="#Indice">[Volver al inicio]</a>
+         <center><img src="imagenes/CONSULTAS-Estado_caja_1.jpg" /></center>
+         <br><br>
+         Desde esta secci&oacute;n visualizaremos el estado global de la caja. Se sumar&aacute;n todos los importes de las
+         facturas ingresadas, seleccionado por rango de fechas:
+         <br><br>
+         <center><img src="imagenes/CONSULTAS-Estado_caja_2.jpg" /></center>
+         <br><br>
+         <ul>
+            <li>Total Importe: es la sumatoria de todos los importes de las facturas emitidas</li>
+            <li>Iva: es la sumatoria del campo Iva calculado autom&aacute;ticamente de todas las facturas, dependiendo del tipo
+            que sean las mismas</li>
+            <li>Total facturado: es la suma del importe m&aacute;s el Iva</li>
+            <li>Total cobrado: es la sumatoria de todos los importes cobrados a clientes</li>
+            <li>Resta: Es la sumatoria de los saldos de cada cliente</li>
+         </ul>
+         <br><br><br>
+         <a name="caja_chica"></a>
+         <h3><u>CAJA CHICA</u>:</h3>
+         <a href="#Indice">[Volver al inicio]</a>
+         <br>
+         <center><img src="imagenes/Caja_chica_1.jpg" /></center>
+         <br><br>
+         Desde aqu&iacute; realizaremos movimientos muy similares a como los realizados en la caja principal. La diferencia
+         denota en que en este caso, no ser&aacute; necesario crear un comprobante para realizar un movimiento.
+         La caja chica maneja valores referentes a gastos frecuentes de oficina, etc&eacute;tera.<br>
+         Los movimientos se realizar&aacute;n por medio del siguiente formulario:
+         <br><br>
+         <center><img src="imagenes/Caja_chica_2.jpg" /></center>
+         <br><br><br>
+         <a name="salir"></a>
+         <h3><u>SALIR</u>:</h3>
+         <a href="#Indice">[Volver al inicio]</a>
+         <br>
+         <center><img src="imagenes/salir.jpg" /></center>
+         <br><br>
+         Nos desloguer&aacute; del sistema redirigiendo autom&aacute;ticamente al la p&aacute;gina de logueo del sistema.<br>
+         Cabe destacar que la duraci&oacute;n m&aacute;xima de cada sesi&oacute;n es de 120 minutos, pasado dicho tiempo,
+         es sistema nos desloguear&aacute; autom&aacute;ticamente, teniendo que volver a loguearnos para poder continuar.
+         <br><br>
+         <hr>
+      </div>
+   </body>
+</html>

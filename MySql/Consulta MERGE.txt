@@ -1,0 +1,18 @@
+CREATE TEMPORARY TABLE trucho (id_cliente_trucho int null,
+                              id_factura_trucho int null,
+                              suma_cobrado decimal(11,2) null);
+
+insert into trucho (id_cliente_trucho, id_factura_trucho,suma_cobrado)
+
+SELECT caja.id_cliente,
+		caja.id_factura,
+        sum(caja.cobrado) + sum(caja.carga1) + sum(caja.carga2) + sum(caja.carga3) + sum(caja.carga4) + sum(caja.carga5) as Suma_Cobrado
+FROM caja
+GROUP BY caja.id_factura, caja.id_cliente
+order by id_factura DESC;
+
+UPDATE facturas_emitidas
+INNER JOIN trucho ON facturas_emitidas.id_factura_emitida = trucho.id_factura_trucho AND
+facturas_emitidas.id_cliente = trucho.id_cliente_trucho
+SET facturas_emitidas.saldo = facturas_emitidas.importe - trucho.suma_cobrado
+WHERE facturas_emitidas.id_tipo = 2

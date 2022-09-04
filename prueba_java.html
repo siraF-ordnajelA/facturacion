@@ -1,0 +1,23 @@
+<html>
+<head>
+   <title>Prueba Mayusculas</title>
+</head>
+
+<script>
+   function mayuscula(){
+      var nombre = document.getElementById('txt_banco').value;
+      nombre = nombre.toUpperCase();
+      
+      alert(nombre);
+   }
+</script>
+
+<body class="principal">
+   <form method="post" action="">
+      <label>Nombre del Banco*:</label>
+      <input type="text" id="txt_banco" name="txt_banco" maxlength="150" required />
+      <br><br>
+      <input type="button" id="btn_activa" value="ACTIVA" onclick="mayuscula();" />
+   </form>
+</body>
+</html>
